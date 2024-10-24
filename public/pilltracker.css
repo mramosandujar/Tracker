@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.day {
+    position: relative; /* Make the day element a positioned ancestor */
+    border: 1px solid #ccc;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+.day:hover {
+    background-color: #f0f0f0;
+}
+
+.hidden {
+    display: none;
+    
+}
+.pill {
+    width: 30px;  /* Make it larger for visibility */
+    height: 15px; /* Make it larger for visibility */
+    background-color: #d634b8;
+    border-radius: 10px;
+    border: 2px solid black; /* Add a border for better visibility */
+    position: absolute;
+    bottom: 10px; /* Adjusted for better visibility */
+    right: 10px;  /* Adjusted for better visibility */
+}
